@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin_manifest xmlns="http://www.elgg.org/plugin_manifest/1.8">
+	<name>Footballmap</name>
+	<author>Urbanfootballers</author>
+	<version>1.8</version>
+	<category>bundled</category>
+	<category>content</category>
+	<blurb>Urbanfootballers plugin</blurb>
+	<description>Adds footballmap to Elgg installation.</description>
+	<website>http://urbanfootballers.com/</website>
+	<copyright>See COPYRIGHT.txt</copyright>
+	<license>GNU Public License version 2</license>
+	<requires>
+		<type>elgg_version</type>
+		<version>2010030100</version>
+	</requires>
+	<admin_interface>simple</admin_interface>
+	<activate_on_install>true</activate_on_install>
+	<on_activate>footballmap_on_active</on_activate>
+</plugin_manifest>
