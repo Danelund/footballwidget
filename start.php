@@ -18,10 +18,10 @@ function footballmap_init() {
 
 function footballmap_page_handler()
 {
-	$params['body'] = elgg_view('footballmap/map');
+	$params['content'] = elgg_view('footballmap/map');
 	$params['sidebar'] = elgg_view('footballmap/sidebar');
 	$body = elgg_view_layout('content', $params);
-
+	
 	echo elgg_view_page($params['title'], $body);
 }
 
