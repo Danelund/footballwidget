@@ -15,6 +15,4 @@
 		<version>2010030100</version>
 	</requires>
 	<admin_interface>simple</admin_interface>
-	<activate_on_install>true</activate_on_install>
-	<on_activate>footballmap_on_active</on_activate>
 </plugin_manifest>

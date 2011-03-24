@@ -1,5 +1,6 @@
 var baseurl = "/geocontroller/";
 var adminprivileges = ($(location).attr("href").indexOf('freemod') > -1);
+var isMobile = false;
 var markers = new Array();
 var markerids = new Array();
 var markerslisted = new Array();
@@ -53,7 +54,7 @@ $(document).ready( function() {
         MarkerCluster = new MarkerClusterer(map, {gridSize: 10});
 
         //setup search
-        $("#contact :input, #GeoCoderSearch").uniform();
+        /*$("#contact :input, #GeoCoderSearch").uniform();
         $("#searchdrop").button({text:false, icons:{primary : 'ui-icon-search'}}).click( function() {
             if($("#markersearchcontainer").length > 0) {
                 $("#markersearchcontainer").dialog("open");
@@ -117,7 +118,7 @@ $(document).ready( function() {
                 }
             }
         }).attr('title',jlang('searchHint')).hint();
-
+		*/
         GetLocation();
 
         //check if there are admin privileges
